@@ -1,32 +1,13 @@
+<template>
+  <div id = "app">
+    <BacsicLayout/>
+  </div>
+</template>
+
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import BacsicLayout from '@/layouts/BacsicLayout.vue'
 </script>
 
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-    <a-space warp>
-      <a-button type="primary" danger>Primary</a-button>
-      <a-button danger>Default</a-button>
-      <a-button type="dashed" danger>Dashed</a-button>
-      <a-button type="text" danger>Text</a-button>
-      <a-button type="link" danger>Link</a-button>
-    </a-space>
-
-  <RouterView />
-</template>
 
 <style scoped>
 header {
